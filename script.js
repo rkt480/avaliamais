@@ -14,7 +14,7 @@ const nav = document.querySelector('.main-nav');
 
 function setCtaTracking(element, details) {
   if (!element) return;
-  element.dataset.gtmEvent = 'cta_click';
+  element.dataset.gtmEvent = details.event || 'cta_click';
   element.dataset.gtmId = details.id;
   element.dataset.gtmLocation = details.location;
   element.dataset.gtmDestination = details.destination;
@@ -31,7 +31,8 @@ setCtaTracking(document.querySelector('.hero-button'), {
 document.querySelectorAll('.kits .kit-card .button').forEach((button) => {
   const offer = button.dataset.whatsappMessage || 'unknown';
   setCtaTracking(button, {
-    id: `offer_${offer}`, location: 'offer', destination: 'whatsapp', channel: 'whatsapp', offer,
+    event: 'offer_whatsapp_click', id: `offer_${offer}`, location: 'offer',
+    destination: 'whatsapp', channel: 'whatsapp', offer,
   });
 });
 setCtaTracking(document.querySelector('.final-cta .button'), {
