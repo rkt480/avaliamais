@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 167 57" role="img" aria-labelledby="title desc">
+  <title id="title">Avalia+</title>
+  <desc id="desc">Mais avaliações. Mais clientes.</desc>
+  <defs>
+    <linearGradient id="plus-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0878ee"/>
+      <stop offset="48%" stop-color="#795db4"/>
+      <stop offset="100%" stop-color="#f15a24"/>
+    </linearGradient>
+  </defs>
+  <text x="17" y="34" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="900" letter-spacing="-1.75">Avalia</text>
+  <path d="M110 8h5v11h10v5h-10v11h-5V24h-10v-5h10z" fill="url(#plus-gradient)"/>
+  <text x="17" y="51" fill="#eaf0f8" font-family="Inter, Arial, sans-serif" font-size="8.6" font-weight="700" letter-spacing="-.12">Mais avaliações. Mais clientes.</text>
+</svg>
